@@ -2,6 +2,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./HomePage.scss";
 
+import python from "../../assets/images/python-logo.png";
+import html from "../../assets/images/html-logo.png";
+import css from "../../assets/images/css-logo.png";
+import scssLogo from "../../assets/images/scss-logo.png";
+import javaScript from "../../assets/images/javaScript-logo.png";
+import mysql from "../../assets/images/mysql-logo.png";
+import github from "../../assets/images/github.png";
+import linkledin from "../../assets/images/linkledin.png";
+
 function HomePage() {
   const [displayDropdown, setDisplayDropDown] = useState(false);
 
@@ -52,7 +61,8 @@ function HomePage() {
 
       <article className="homePage__context">
         <p className="homePage__name">
-          Hello I'm Nicholas Zambrano, welcome to my portfolio.
+          {/* Hello I'm Nicholas Zambrano, welcome to my portfolio. */}
+          Nicholas Zambrano
         </p>
 
         <p className="homePage__intro">
@@ -60,8 +70,70 @@ function HomePage() {
           fascinated seing lines of code becoming a tangible product.
         </p>
       </article>
+      <section className="homePage__skills">
+        <h2 className="homePage__skillsSubheader">Skills</h2>
 
-      <footer></footer>
+        <section className="homePage__skillWrapper">
+          <article className="homePage__eachSkill">
+            <img
+              className="homePage__skillImage homePage__pythonImage"
+              src={python}
+              alt="python"
+            />
+          </article>
+          <article className="homePage__eachSkill">
+            <img
+              className="homePage__skillImage homePage__jsImage"
+              src={javaScript}
+              alt="javascript"
+            />
+          </article>
+          <article className="homePage__eachSkill">
+            <img
+              className="homePage__skillImage  homePage__htmlImage"
+              src={html}
+              alt="html"
+            />
+          </article>
+          <article className="homePage__eachSkill">
+            <img
+              className="homePage__skillImage homePage__cssImage"
+              src={css}
+              alt="css"
+            />
+          </article>
+          <article className="homePage__eachSkill">
+            <img
+              className="homePage__skillImage homePage__scssImage"
+              src={scssLogo}
+              alt="scss"
+            />
+          </article>
+          <article className="homePage__eachSkill">
+            <img
+              className="homePage__skillImage homePage__mysqlImage "
+              src={mysql}
+              alt="mysql"
+            />
+          </article>
+        </section>
+      </section>
+
+      <footer>
+        <div className="homePage__footerWrapper">
+          <Link to="https://github.com/Nicholas-Zambrano">
+            <img className="homePage__github" src={github} alt="github" />
+          </Link>
+
+          <Link to="https://www.linkedin.com/in/nicholas-zambrano1">
+            <img
+              className="homePage__linkledin"
+              src={linkledin}
+              alt="linkledin"
+            />
+          </Link>
+        </div>
+      </footer>
     </section>
   );
 }
