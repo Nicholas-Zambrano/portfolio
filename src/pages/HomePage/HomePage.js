@@ -17,14 +17,14 @@ function HomePage() {
   const dropdownMenu = () => {
     return (
       <div className="homePage__dropdown">
-        <Link className="homePage__linnk" to="/About">
-          <p>About</p>
+        <Link className="homePage__link" to="/About">
+          <p className="homePage__linkContent">About</p>
         </Link>
-        <Link className="homePage__linnk" to="/Projects">
-          <p>Projects</p>
+        <Link className="homePage__link" to="/Projects">
+          <p className="homePage__linkContent">Projects</p>
         </Link>
-        <Link className="homePage__linnk">
-          <p>Contact </p>
+        <Link className="homePage__link">
+          <p className="homePage__linkContent">Contact </p>
         </Link>
       </div>
     );
@@ -47,7 +47,7 @@ function HomePage() {
     <section className="homePage">
       <div className="homePage__header">
         <h1 className="homePage__title"> NZ</h1>
-        <div>
+        <div className="homePage__headerButtonWrapper">
           <button
             type="submit"
             onClick={handleSubmit}
@@ -75,39 +75,49 @@ function HomePage() {
 
         <section className="homePage__skillWrapper">
           <article className="homePage__eachSkill">
-            <img
-              className="homePage__skillImage homePage__pythonImage"
-              src={python}
-              alt="python"
-            />
+            <Link>
+              <img
+                className="homePage__skillImage homePage__pythonImage"
+                src={python}
+                alt="python"
+              />
+            </Link>
           </article>
           <article className="homePage__eachSkill">
-            <img
-              className="homePage__skillImage homePage__jsImage"
-              src={javaScript}
-              alt="javascript"
-            />
+            <Link>
+              <img
+                className="homePage__skillImage homePage__jsImage"
+                src={javaScript}
+                alt="javascript"
+              />
+            </Link>
           </article>
           <article className="homePage__eachSkill">
-            <img
-              className="homePage__skillImage  homePage__htmlImage"
-              src={html}
-              alt="html"
-            />
+            <Link>
+              <img
+                className="homePage__skillImage  homePage__htmlImage"
+                src={html}
+                alt="html"
+              />
+            </Link>
           </article>
           <article className="homePage__eachSkill">
-            <img
-              className="homePage__skillImage homePage__cssImage"
-              src={css}
-              alt="css"
-            />
+            <Link>
+              <img
+                className="homePage__skillImage homePage__cssImage"
+                src={css}
+                alt="css"
+              />
+            </Link>
           </article>
           <article className="homePage__eachSkill">
-            <img
-              className="homePage__skillImage homePage__scssImage"
-              src={scssLogo}
-              alt="scss"
-            />
+            <Link>
+              <img
+                className="homePage__skillImage homePage__scssImage"
+                src={scssLogo}
+                alt="scss"
+              />
+            </Link>
           </article>
           <article className="homePage__eachSkill">
             <img
