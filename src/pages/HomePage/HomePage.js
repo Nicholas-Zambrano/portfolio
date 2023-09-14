@@ -35,7 +35,7 @@ function HomePage() {
   // };
 
   // const handleSubmit = () => {
-  //   /* if the button to display is already true it has already been clicked, 
+  //   /* if the button to display is already true it has already been clicked,
   //   and if clicked again put it to false
   //   */
   //   if (displayDropdown) {
@@ -50,10 +50,10 @@ function HomePage() {
   return (
     <section className="homePage">
       <div className="homePage__headerWrapper">
-      <div className="homePage__header">
-        <img className="homePage__me" src={me} alt="face picture" />
+        <div className="homePage__header">
+          <img className="homePage__me" src={me} alt="face picture" />
 
-        <DropdownMenu />
+          <DropdownMenu />
         </div>
       </div>
 
@@ -100,7 +100,7 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/javaScript">
               <img
                 className="homePage__skillImage homePage__jsImage"
                 src={javaScript}

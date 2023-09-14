@@ -5,6 +5,7 @@ import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import PythonPage from "./pages/PythonPage/PythonPage";
 import CPage from "./pages/CPage/CPage";
 import JavaPage from "./pages/JavaPage/JavaPage";
+import JavaScript from "./pages/JavaScriptPage/JavaScriptPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/python" element={<PythonPage />} />
           <Route path="/c" element={<CPage />} />
           <Route path="/java" element={<JavaPage />} />
+          <Route path="javaScript" element={<JavaScript />} />
         </Routes>
       </BrowserRouter>
     </div>
