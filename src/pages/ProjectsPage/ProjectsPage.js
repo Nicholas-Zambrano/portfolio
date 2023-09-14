@@ -77,7 +77,7 @@ function ProjectsPage() {
                 with their classmates before starting university.
               </p>
               <p className="projectsPage__projectLanguage">
-                Language: React JS
+                Language: React JS, MySQL
               </p>
             </div>
             <img className="projectsPage__projectImage" src={mingleU} />
@@ -96,7 +96,7 @@ function ProjectsPage() {
                 inventories
               </p>
               <p className="projectsPage__projectLanguage">
-                Language: React JS
+                Language: React JS, MySQL
               </p>
             </div>
 

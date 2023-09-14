@@ -109,7 +109,7 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/html-css-websites">
               <img
                 className="homePage__skillImage  homePage__htmlImage"
                 src={html}
@@ -118,7 +118,7 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/html-css-websites">
               <img
                 className="homePage__skillImage homePage__cssImage"
                 src={css}
@@ -127,7 +127,7 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/html-css-websites">
               <img
                 className="homePage__skillImage homePage__scssImage"
                 src={scssLogo}
@@ -136,11 +136,13 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <img
-              className="homePage__skillImage homePage__mysqlImage "
-              src={mysql}
-              alt="mysql"
-            />
+            <Link to="/full-stack">
+              <img
+                className="homePage__skillImage homePage__mysqlImage "
+                src={mysql}
+                alt="mysql"
+              />
+            </Link>
           </article>
         </section>
       </section>

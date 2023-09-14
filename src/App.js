@@ -6,6 +6,8 @@ import PythonPage from "./pages/PythonPage/PythonPage";
 import CPage from "./pages/CPage/CPage";
 import JavaPage from "./pages/JavaPage/JavaPage";
 import JavaScript from "./pages/JavaScriptPage/JavaScriptPage";
+import WebsitePage from "./pages/WebsitePage/WebsitePage";
+import FullStackPage from "./pages/FullStackPage/FullStackPage";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path="/python" element={<PythonPage />} />
           <Route path="/c" element={<CPage />} />
           <Route path="/java" element={<JavaPage />} />
-          <Route path="javaScript" element={<JavaScript />} />
+          <Route path="/javaScript" element={<JavaScript />} />
+          <Route path="/html-css-websites" element={<WebsitePage />} />
+          <Route path="/full-stack" element={<FullStackPage />} />
         </Routes>
       </BrowserRouter>
     </div>

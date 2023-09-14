@@ -1,0 +1,22 @@
+@use "../../partials/mixins" as *;
+.websitePage {
+  &__headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    @include tablet {
+      //   padding-top: 4rem;
+      margin: auto;
+      max-width: 768px;
+    }
+  }
+  &__title {
+    color: white;
+    font-size: 2.8rem;
+
+    @include tablet {
+      font-size: 4rem;
+    }
+  }
+}
