@@ -1,10 +1,12 @@
 import fireAlarm from "../../assets/images/fire-alarm.png";
 import { Link } from "react-router-dom";
+import "./CPage.scss";
 function CPage() {
   return (
-    <div>
-      <h1>c page</h1>
-
+    <div className="CPage">
+      <div className="CPage__headerWrapper">
+        <h1 className="CPage__title">C</h1>
+      </div>
       <Link className="projectsPage__link">
         <article className="projectsPage__project">
           <div className="projectsPage__projectWrapper">
