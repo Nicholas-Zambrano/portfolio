@@ -91,7 +91,7 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/java">
               <img
                 className="homePage__skillImage homePage__javaImage"
                 src={java}

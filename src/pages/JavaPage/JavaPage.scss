@@ -1,0 +1,18 @@
+@use "../../partials/mixins" as *;
+.javaPage {
+  &__headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    @include tablet {
+      //   padding-top: 4rem;
+      margin: auto;
+      max-width: 768px;
+    }
+  }
+  &__title {
+    font-size: 5rem;
+    color: white;
+  }
+}
