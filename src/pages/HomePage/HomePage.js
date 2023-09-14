@@ -82,7 +82,7 @@ function HomePage() {
             </Link>
           </article>
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/c">
               <img
                 className="homePage__skillImage homePage__cImage"
                 src={c}
