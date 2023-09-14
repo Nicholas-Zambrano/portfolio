@@ -10,8 +10,10 @@ import javaScript from "../../assets/images/javaScript-logo.png";
 import mysql from "../../assets/images/mysql-logo.png";
 import github from "../../assets/images/github.png";
 import linkledin from "../../assets/images/linkledin.png";
-import me from "../../assets/images/me.jpg"
+import me from "../../assets/images/me.jpg";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
+import java from "../../assets/images/java2.png";
+import c from "../../assets/images/c.png";
 
 function HomePage() {
   const [displayDropdown, setDisplayDropDown] = useState(false);
@@ -60,7 +62,7 @@ function HomePage() {
           </button>
           {displayDropdown && dropdownMenu()}
         </div> */}
-        <DropdownMenu/>
+        <DropdownMenu />
       </div>
 
       <article className="homePage__context">
@@ -84,6 +86,24 @@ function HomePage() {
                 className="homePage__skillImage homePage__pythonImage"
                 src={python}
                 alt="python"
+              />
+            </Link>
+          </article>
+          <article className="homePage__eachSkill">
+            <Link>
+              <img
+                className="homePage__skillImage homePage__cImage"
+                src={c}
+                alt="c"
+              />
+            </Link>
+          </article>
+          <article className="homePage__eachSkill">
+            <Link>
+              <img
+                className="homePage__skillImage homePage__javaImage"
+                src={java}
+                alt="java"
               />
             </Link>
           </article>

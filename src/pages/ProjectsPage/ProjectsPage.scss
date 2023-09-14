@@ -1,3 +1,6 @@
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+
 .projectsPage {
   background-image: url("../../assets/images/main-background.png");
   height: 100%;
@@ -6,14 +9,19 @@
   background-size: cover;
   min-height: 100vh;
 
-  &__headerWrapper{
+  &__headerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-top: 2rem;
+    @include tablet {
+    //   padding-top: 4rem;
+      margin: auto;
+      max-width: 768px;
+    }
   }
 
-  &__title{
+  &__title {
     text-align: center;
     // padding-top: 2rem;
     color: white;
@@ -25,6 +33,10 @@
     width: 16rem;
     height: 25rem;
     border-radius: 2rem;
+
+    @include tablet {
+      width: 30rem;
+    }
   }
 
   &__link {
@@ -40,6 +52,13 @@
     border-radius: 2px;
 
     //   border: 0.5rem solid black;
+
+    @include tablet {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
   }
 
   &__projectWrapper {
@@ -54,6 +73,15 @@
     margin-top: 2rem;
     border-radius: 1rem;
     padding: 1rem;
+
+    @include tablet {
+      margin-top: 0;
+      //   margin-left: 5rem;
+      //   margin-right: 5rem;
+      border-radius: 3rem;
+      max-width: 768px;
+      margin: auto;
+    }
   }
 
   &__projectWritingWrapper {
@@ -73,10 +101,19 @@
   &__projectDescription {
     width: 15rem;
     font-family: monospace;
+
+    @include tablet {
+      width: 30rem;
+      font-size: 2rem;
+    }
   }
 
   &__projectLanguage {
     color: aqua;
     font-family: monospace;
+
+    @include tablet {
+      font-size: 2rem;
+    }
   }
 }

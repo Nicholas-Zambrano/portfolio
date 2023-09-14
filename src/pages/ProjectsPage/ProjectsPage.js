@@ -31,7 +31,7 @@ function ProjectsPage() {
               <p className="projectsPage__projectDescription">
                 Developed a portable fire alarm system using Arduinos.
               </p>
-              <p className="projectsPage__projectLanguage">Language: C++</p>
+              <p className="projectsPage__projectLanguage">Language: C</p>
             </div>
             <img className="projectsPage__projectImage" src={fireAlarm} />
           </div>
