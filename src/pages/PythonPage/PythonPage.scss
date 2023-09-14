@@ -1,0 +1,21 @@
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+.pythonPage {
+  &__title {
+    text-align: center;
+    // padding-top: 2rem;
+    color: white;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
+  @include tablet {
+    //   padding-top: 4rem;
+    margin: auto;
+    max-width: 768px;
+  }
+}

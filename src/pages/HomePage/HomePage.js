@@ -16,53 +16,45 @@ import java from "../../assets/images/java2.png";
 import c from "../../assets/images/c.png";
 
 function HomePage() {
-  const [displayDropdown, setDisplayDropDown] = useState(false);
+  // const [displayDropdown, setDisplayDropDown] = useState(false);
 
-  const dropdownMenu = () => {
-    return (
-      <div className="homePage__dropdown">
-        <Link className="homePage__link" to="/About">
-          <p className="homePage__linkContent">About</p>
-        </Link>
-        <Link className="homePage__link" to="/Projects">
-          <p className="homePage__linkContent">Projects</p>
-        </Link>
-        <Link className="homePage__link">
-          <p className="homePage__linkContent">Contact </p>
-        </Link>
-      </div>
-    );
-  };
+  // const dropdownMenu = () => {
+  //   return (
+  //     <div className="homePage__dropdown">
+  //       <Link className="homePage__link" to="/About">
+  //         <p className="homePage__linkContent">About</p>
+  //       </Link>
+  //       <Link className="homePage__link" to="/Projects">
+  //         <p className="homePage__linkContent">Projects</p>
+  //       </Link>
+  //       <Link className="homePage__link">
+  //         <p className="homePage__linkContent">Contact </p>
+  //       </Link>
+  //     </div>
+  //   );
+  // };
 
-  const handleSubmit = () => {
-    /* if the button to display is already true it has already been clicked, 
-    and if clicked again put it to false
-    */
-    if (displayDropdown) {
-      setDisplayDropDown(false);
-    }
-    // if it has not yet been clicked then update state to true
-    else {
-      setDisplayDropDown(true);
-    }
-  };
+  // const handleSubmit = () => {
+  //   /* if the button to display is already true it has already been clicked, 
+  //   and if clicked again put it to false
+  //   */
+  //   if (displayDropdown) {
+  //     setDisplayDropDown(false);
+  //   }
+  //   // if it has not yet been clicked then update state to true
+  //   else {
+  //     setDisplayDropDown(true);
+  //   }
+  // };
 
   return (
     <section className="homePage">
+      <div className="homePage__headerWrapper">
       <div className="homePage__header">
-        {/* <h1 className="homePage__title"> NZ</h1> */}
         <img className="homePage__me" src={me} alt="face picture" />
-        {/* <div className="homePage__headerButtonWrapper">
-          <button
-            type="submit"
-            onClick={handleSubmit}
-            className="homePage__headerButton"
-          >
-            Menu
-          </button>
-          {displayDropdown && dropdownMenu()}
-        </div> */}
+
         <DropdownMenu />
+        </div>
       </div>
 
       <article className="homePage__context">
@@ -81,7 +73,7 @@ function HomePage() {
 
         <section className="homePage__skillWrapper">
           <article className="homePage__eachSkill">
-            <Link>
+            <Link to="/python">
               <img
                 className="homePage__skillImage homePage__pythonImage"
                 src={python}
