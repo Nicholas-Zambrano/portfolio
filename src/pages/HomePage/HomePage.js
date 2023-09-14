@@ -10,6 +10,8 @@ import javaScript from "../../assets/images/javaScript-logo.png";
 import mysql from "../../assets/images/mysql-logo.png";
 import github from "../../assets/images/github.png";
 import linkledin from "../../assets/images/linkledin.png";
+import me from "../../assets/images/me.jpg"
+import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 
 function HomePage() {
   const [displayDropdown, setDisplayDropDown] = useState(false);
@@ -46,8 +48,9 @@ function HomePage() {
   return (
     <section className="homePage">
       <div className="homePage__header">
-        <h1 className="homePage__title"> NZ</h1>
-        <div className="homePage__headerButtonWrapper">
+        {/* <h1 className="homePage__title"> NZ</h1> */}
+        <img className="homePage__me" src={me} alt="face picture" />
+        {/* <div className="homePage__headerButtonWrapper">
           <button
             type="submit"
             onClick={handleSubmit}
@@ -56,7 +59,8 @@ function HomePage() {
             Menu
           </button>
           {displayDropdown && dropdownMenu()}
-        </div>
+        </div> */}
+        <DropdownMenu/>
       </div>
 
       <article className="homePage__context">
