@@ -1,13 +1,14 @@
 import "./JavaPage.scss";
 import { Link } from "react-router-dom";
 import DOD from "../../assets/images/DOD.png";
+import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 
 function JavaPage() {
   return (
     <div className="javaPage">
       <div className="javaPage__headerWrapper">
-       
         <h1 className="javaPage__title">Java</h1>
+        <DropdownMenu />
       </div>
 
       <Link className="projectsPage__link">

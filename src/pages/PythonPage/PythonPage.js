@@ -4,12 +4,14 @@ import diceGame from "../../assets/images/diceGame.png";
 import sudoku from "../../assets/images/sudoku.png";
 import spam from "../../assets/images/spam-classification.png";
 import "./PythonPage.scss";
+import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 
 function PythonPage() {
   return (
     <div className="pythonPage">
       <div className="pythonPage__header">
         <h1 className="pythonPage__title">Pyhon</h1>
+        <DropdownMenu />
       </div>
       <Link className="projectsPage__link">
         <article className="projectsPage__project">

@@ -7,6 +7,9 @@ function DropdownMenu() {
   const dropdownMenu = () => {
     return (
       <div className="homePage__dropdown">
+        <Link className="homePage__link" to="/">
+          <p className="homePage__linkContent">Home Page</p>
+        </Link>
         <Link className="homePage__link" to="/About">
           <p className="homePage__linkContent">About</p>
         </Link>

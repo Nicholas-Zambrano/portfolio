@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import brainFlix from "../../assets/images/brainFlix.png";
 import bandSite from "../../assets/images/bandSite.png";
-import "./JavaScriptPage"
+import "./JavaScriptPage.scss";
+import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 
 function JavaScript() {
   return (
     <div className="javaScript">
       <div className="javaScript__headerWrapper">
-      
         <h1 className="javaScript__title">JS</h1>
+        <DropdownMenu/>
       </div>
       <Link className="projectsPage__link">
         <article className="projectsPage__project">
@@ -28,7 +29,7 @@ function JavaScript() {
         </article>
       </Link>
 
-      <h2>React</h2>
+      <h2 className="javaScript__subheader javaScript__subheaderWrapper">React</h2>
       <Link className="projectsPage__link">
         <article className="projectsPage__project">
           <div className="projectsPage__projectWrapper">
