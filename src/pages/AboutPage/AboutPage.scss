@@ -1,0 +1,134 @@
+@use "../../partials/mixins" as *;
+
+.aboutPage {
+  &__headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    @include tablet {
+      //   padding-top: 4rem;
+      margin: auto;
+      max-width: 768px;
+    }
+  }
+  &__title {
+    color: white;
+    font-size: 2.8rem;
+
+    @include tablet {
+      font-size: 4rem;
+    }
+  }
+
+  &__timelineDescription {
+    font-size: 14px;
+
+    &--aLevel {
+      color: white;
+      // filter: brightness(150%);
+      font-size: 1.4rem;
+      // z-index: 1;
+      width: 18rem;
+    }
+
+    &--university {
+      margin-top: 14rem;
+      color: white;
+    }
+
+    &--bootcamp {
+      font-size: 1.5rem;
+      margin-top: 17rem;
+      font-weight: bold;
+    }
+  }
+
+  &__timelineYear {
+    font-weight: bold;
+
+    &--university {
+      color: white;
+    }
+    &--bootcamp {
+      color: white;
+    }
+  }
+
+  &__timelineArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    font-size: 24px;
+  }
+  &__timeline {
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 4rem;
+    }
+  }
+
+  &__timelineCard {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 30rem;
+    font-family: monospace;
+    text-align: center;
+    transform: translateY(0); /* Reset transform */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-bottom: 2rem;
+
+    &--visible {
+      opacity: 1;
+    }
+  }
+
+  &__timelineCard--aLevel {
+    background-image: url("../../assets/images/a-level-results.png");
+    // background-position: center;
+    // background-size: 100%;
+    background-position: -7rem center;
+    background-size: 53rem 50rem;
+    background-repeat: no-repeat;
+    // filter: brightness(90%);
+    position: static;
+    z-index: 0;
+  }
+  // &__timelineCard:nth-child(2),
+  // &__timelineCard:nth-child(3) {
+  //   background-color: lavender;
+  // }
+
+  &__timelineCard--university {
+    background-image: url("../../assets/images/bath-black.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -38rem -11rem;
+    background-size: 68rem 39rem;
+    background-position: -38rem -17rem;
+    background-size: 69rem 55rem;
+  }
+
+  &__timelineCard--bootcamp {
+    background-image: url("../../assets/images/demo-day.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+}

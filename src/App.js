@@ -8,6 +8,7 @@ import JavaPage from "./pages/JavaPage/JavaPage";
 import JavaScript from "./pages/JavaScriptPage/JavaScriptPage";
 import WebsitePage from "./pages/WebsitePage/WebsitePage";
 import FullStackPage from "./pages/FullStackPage/FullStackPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/javaScript" element={<JavaScript />} />
           <Route path="/html-css-websites" element={<WebsitePage />} />
           <Route path="/full-stack" element={<FullStackPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
     </div>
