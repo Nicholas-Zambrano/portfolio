@@ -25,7 +25,7 @@ function PythonPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={SRPN} />
+            <img className="projectsPage__projectImage" src={SRPN} alt="SRPN" />
           </div>
         </article>
       </Link>{" "}
@@ -41,7 +41,7 @@ function PythonPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={sudoku} />
+            <img className="projectsPage__projectImage" src={sudoku} alt="sudoku" />
           </div>
         </article>
       </Link>{" "}
@@ -58,7 +58,7 @@ function PythonPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={spam} />
+            <img className="projectsPage__projectImage" src={spam} alt="spam classification"/>
           </div>
         </article>
       </Link>
@@ -74,7 +74,7 @@ function PythonPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={diceGame} />
+            <img className="projectsPage__projectImage" src={diceGame} alt="dice game" />
           </div>
         </article>
       </Link>

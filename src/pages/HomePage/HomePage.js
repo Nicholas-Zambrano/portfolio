@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./HomePage.scss";
 
@@ -16,37 +15,6 @@ import java from "../../assets/images/java2.png";
 import c from "../../assets/images/c.png";
 
 function HomePage() {
-  // const [displayDropdown, setDisplayDropDown] = useState(false);
-
-  // const dropdownMenu = () => {
-  //   return (
-  //     <div className="homePage__dropdown">
-  //       <Link className="homePage__link" to="/About">
-  //         <p className="homePage__linkContent">About</p>
-  //       </Link>
-  //       <Link className="homePage__link" to="/Projects">
-  //         <p className="homePage__linkContent">Projects</p>
-  //       </Link>
-  //       <Link className="homePage__link">
-  //         <p className="homePage__linkContent">Contact </p>
-  //       </Link>
-  //     </div>
-  //   );
-  // };
-
-  // const handleSubmit = () => {
-  //   /* if the button to display is already true it has already been clicked,
-  //   and if clicked again put it to false
-  //   */
-  //   if (displayDropdown) {
-  //     setDisplayDropDown(false);
-  //   }
-  //   // if it has not yet been clicked then update state to true
-  //   else {
-  //     setDisplayDropDown(true);
-  //   }
-  // };
-
   return (
     <section className="homePage">
       <div className="homePage__headerWrapper">
@@ -86,7 +54,8 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__cImage"
                 src={c}
-                alt="c"
+                alt="c language"
+
               />
             </Link>
           </article>

@@ -1,6 +1,5 @@
 import travelSite from "../../assets/images/travelSite.png";
 import coffeeShop from "../../assets/images/coffeeShop.png";
-import bandSite from "../../assets/images/bandSite.png";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import "./WebsitePage.scss";
@@ -26,7 +25,7 @@ function WebsitePage() {
                 Language: HTML, CSS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={coffeeShop} />
+            <img className="projectsPage__projectImage" src={coffeeShop}  alt="cofee shop"/>
           </div>
         </article>
       </Link>
@@ -43,7 +42,7 @@ function WebsitePage() {
                 Language: HTML, CSS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={travelSite} />
+          <img className="projectsPage__projectImage" src={travelSite} alt="travelsite"/>
           </div>
         </article>
       </Link>

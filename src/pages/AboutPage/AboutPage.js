@@ -1,5 +1,5 @@
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./AboutPage.scss";
 import Footer from "../../components/Footer/Footer";

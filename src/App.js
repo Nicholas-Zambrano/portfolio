@@ -10,7 +10,6 @@ import WebsitePage from "./pages/WebsitePage/WebsitePage";
 import FullStackPage from "./pages/FullStackPage/FullStackPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

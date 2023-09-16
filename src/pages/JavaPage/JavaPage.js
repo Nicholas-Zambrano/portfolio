@@ -23,7 +23,7 @@ function JavaPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Java</p>
             </div>
-            <img className="projectsPage__projectImage" src={DOD} />
+            <img className="projectsPage__projectImage" src={DOD} alt="dungeon of doom image"/>
           </div>
         </article>
       </Link>

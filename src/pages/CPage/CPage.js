@@ -21,7 +21,7 @@ function CPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: C</p>
             </div>
-            <img className="projectsPage__projectImage" src={fireAlarm} />
+            <img className="projectsPage__projectImage" src={fireAlarm} alt="fire alarm" />
           </div>
         </article>
       </Link>

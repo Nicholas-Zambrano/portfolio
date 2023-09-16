@@ -29,7 +29,7 @@ function FullStackPage() {
               </p>
             </div>
 
-            <img className="projectsPage__projectImage" src={inStock} />
+            <img className="projectsPage__projectImage" src={inStock} alt="in stock "/>
           </div>
         </article>
       </Link>
@@ -47,7 +47,7 @@ function FullStackPage() {
                 Language: React JS, MySQL
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={mingleU} />
+            <img className="projectsPage__projectImage" src={mingleU}  alt="mingle u" />
           </div>
         </article>
       </Link>

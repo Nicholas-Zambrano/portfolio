@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 import Footer from "../../components/Footer/Footer";
 
-
 function ProjectsPage() {
   return (
     <div className="projectsPage">
@@ -35,7 +34,11 @@ function ProjectsPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: C</p>
             </div>
-            <img className="projectsPage__projectImage" src={fireAlarm} />
+            <img
+              className="projectsPage__projectImage"
+              src={fireAlarm}
+              alt="fire alarm"
+            />
           </div>
         </article>
       </Link>
@@ -50,7 +53,7 @@ function ProjectsPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={SRPN} />
+            <img className="projectsPage__projectImage" src={SRPN} alt="SRPN" />
           </div>
         </article>
       </Link>
@@ -65,7 +68,11 @@ function ProjectsPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Java</p>
             </div>
-            <img className="projectsPage__projectImage" src={DOD} />
+            <img
+              className="projectsPage__projectImage"
+              src={DOD}
+              alt="dungeon of doom image"
+            />
           </div>
         </article>
       </Link>
@@ -82,7 +89,11 @@ function ProjectsPage() {
                 Language: React JS, MySQL
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={mingleU} />
+            <img
+              className="projectsPage__projectImage"
+              src={mingleU}
+              alt="mingle u"
+            />
           </div>
         </article>
       </Link>
@@ -102,7 +113,11 @@ function ProjectsPage() {
               </p>
             </div>
 
-            <img className="projectsPage__projectImage" src={inStock} />
+            <img
+              className="projectsPage__projectImage"
+              src={inStock}
+              alt="in stock"
+            />
           </div>
         </article>
       </Link>
@@ -118,7 +133,11 @@ function ProjectsPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={sudoku} />
+            <img
+              className="projectsPage__projectImage"
+              src={sudoku}
+              alt="sudoku"
+            />
           </div>
         </article>
       </Link>
@@ -134,7 +153,11 @@ function ProjectsPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={diceGame} />
+            <img
+              className="projectsPage__projectImage"
+              src={diceGame}
+              alt="dice game"
+            />
           </div>
         </article>
       </Link>
@@ -151,7 +174,11 @@ function ProjectsPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: Python</p>
             </div>
-            <img className="projectsPage__projectImage" src={spam} />
+            <img
+              className="projectsPage__projectImage"
+              src={spam}
+              alt="spam classification"
+            />
           </div>
         </article>
       </Link>
@@ -167,7 +194,11 @@ function ProjectsPage() {
                 Language: React JS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={brainFlix} />
+            <img
+              className="projectsPage__projectImage"
+              src={brainFlix}
+              alt="brainflix"
+            />
           </div>
         </article>
       </Link>
@@ -184,7 +215,11 @@ function ProjectsPage() {
                 Language: JS, HTML, SCSS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={bandSite} />
+            <img
+              className="projectsPage__projectImage"
+              src={bandSite}
+              alt="bandsite"
+            />
           </div>
         </article>
       </Link>
@@ -201,7 +236,11 @@ function ProjectsPage() {
                 Language: HTML, CSS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={travelSite} />
+            <img
+              className="projectsPage__projectImage"
+              src={travelSite}
+              alt="travelsite"
+            />
           </div>
         </article>
       </Link>
@@ -218,11 +257,15 @@ function ProjectsPage() {
                 Language: HTML, CSS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={coffeeShop} />
+            <img
+              className="projectsPage__projectImage"
+              src={coffeeShop}
+              alt="coffee shop"
+            />
           </div>
         </article>
       </Link>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

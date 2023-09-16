@@ -26,7 +26,7 @@ function JavaScript() {
                 Language: JS, HTML, SCSS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={bandSite} />
+            <img className="projectsPage__projectImage" src={bandSite} alt="bandsite" />
           </div>
         </article>
       </Link>
@@ -44,7 +44,7 @@ function JavaScript() {
                 Language: React JS
               </p>
             </div>
-            <img className="projectsPage__projectImage" src={brainFlix} />
+            <img className="projectsPage__projectImage" src={brainFlix} alt="brainflix" />
           </div>
         </article>
       </Link>
