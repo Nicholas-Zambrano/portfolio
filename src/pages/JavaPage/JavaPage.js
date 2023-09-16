@@ -19,15 +19,15 @@ function JavaPage() {
               <h2 className="projectsPage__projectName">Dungeon of Doom</h2>
               <p className="projectsPage__projectDescription">
                 An adventure game where a player navigates through a dungeon
-                collecing gold while avoiding a villian bot
+                collecting gold while avoiding a villain bot
               </p>
               <p className="projectsPage__projectLanguage">Language: Java</p>
             </div>
-            <img className="projectsPage__projectImage" src={DOD} alt="dungeon of doom image"/>
+            <img className="projectsPage__projectImage" src={DOD} alt="Dungeon of Doom screenshot" /> {/* Updated alt text */}
           </div>
         </article>
       </Link>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

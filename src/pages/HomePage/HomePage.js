@@ -19,7 +19,7 @@ function HomePage() {
     <section className="homePage">
       <div className="homePage__headerWrapper">
         <div className="homePage__header">
-          <img className="homePage__me" src={me} alt="face picture" />
+          <img className="homePage__me" src={me} alt="face of me" />
 
           <DropdownMenu />
         </div>
@@ -45,7 +45,7 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__pythonImage"
                 src={python}
-                alt="python"
+                alt="Python"
               />
             </Link>
           </article>
@@ -54,7 +54,7 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__cImage"
                 src={c}
-                alt="c language"
+                alt="C language"
 
               />
             </Link>
@@ -64,7 +64,7 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__javaImage"
                 src={java}
-                alt="java"
+                alt="JAVA language"
               />
             </Link>
           </article>
@@ -91,7 +91,7 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__cssImage"
                 src={css}
-                alt="css"
+                alt="CSS language"
               />
             </Link>
           </article>
@@ -100,7 +100,7 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__scssImage"
                 src={scssLogo}
-                alt="scss"
+                alt="SCSS language"
               />
             </Link>
           </article>
@@ -109,7 +109,7 @@ function HomePage() {
               <img
                 className="homePage__skillImage homePage__mysqlImage "
                 src={mysql}
-                alt="mysql"
+                alt="MYSQL language"
               />
             </Link>
           </article>
@@ -126,7 +126,7 @@ function HomePage() {
             <img
               className="homePage__linkledin"
               src={linkledin}
-              alt="linkledin"
+              alt="LinkedIn page for myself"
             />
           </Link>
         </div>
@@ -136,3 +136,5 @@ function HomePage() {
 }
 
 export default HomePage;
+
+
