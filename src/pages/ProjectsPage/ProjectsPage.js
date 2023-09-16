@@ -13,6 +13,8 @@ import coffeeShop from "../../assets/images/coffeeShop.png";
 import "./ProjectsPage.scss";
 import { Link } from "react-router-dom";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
+import Footer from "../../components/Footer/Footer";
+
 
 function ProjectsPage() {
   return (
@@ -220,6 +222,7 @@ function ProjectsPage() {
           </div>
         </article>
       </Link>
+      <Footer/>
     </div>
   );
 }

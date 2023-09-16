@@ -1,0 +1,84 @@
+@use "../../partials/mixins" as *;
+
+.contact {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: 100vh;
+    padding-bottom: 4rem;
+  }
+
+  &__headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    @include tablet {
+      //   padding-top: 4rem;
+      margin: auto;
+      max-width: 768px;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  &__card {
+    // background-color: #f0f0f0;
+    background-color: rgb(85 211 240 / 84%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(202, 23, 23, 0.909);
+    padding: 20px;
+    width: 28rem;
+
+    @include tablet {
+      width: 60rem;
+      height: 46rem;
+    }
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+  &__formGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+  }
+
+  &__input {
+    // background-color: red;
+    padding: 10px;
+    border: 2px solid #1e75de;
+    border-radius: 1rem;
+  }
+
+  &__button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgb(0 255 172 / 91%);
+  }
+
+  &__button:hover {
+    background-color: #0056b3;
+  }
+}

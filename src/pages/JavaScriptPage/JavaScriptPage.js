@@ -3,6 +3,8 @@ import brainFlix from "../../assets/images/brainFlix.png";
 import bandSite from "../../assets/images/bandSite.png";
 import "./JavaScriptPage.scss";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
+import Footer from "../../components/Footer/Footer";
+
 
 function JavaScript() {
   return (
@@ -46,6 +48,7 @@ function JavaScript() {
           </div>
         </article>
       </Link>
+      <Footer/>
     </div>
   );
 }

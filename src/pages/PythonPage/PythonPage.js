@@ -5,6 +5,7 @@ import sudoku from "../../assets/images/sudoku.png";
 import spam from "../../assets/images/spam-classification.png";
 import "./PythonPage.scss";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
+import Footer from "../../components/Footer/Footer";
 
 function PythonPage() {
   return (
@@ -77,6 +78,7 @@ function PythonPage() {
           </div>
         </article>
       </Link>
+      <Footer/>
     </div>
   );
 }

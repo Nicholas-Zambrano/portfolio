@@ -16,7 +16,7 @@ function DropdownMenu() {
         <Link className="homePage__link" to="/Projects">
           <p className="homePage__linkContent">Projects</p>
         </Link>
-        <Link className="homePage__link">
+        <Link className="homePage__link" to="/contact-me">
           <p className="homePage__linkContent">Contact</p>
         </Link>
       </div>

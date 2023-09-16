@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import inStock from "../../assets/images/inStock.png";
 import mingleU from "../../assets/images/mingleU.png";
+import Footer from "../../components/Footer/Footer";
+
 import "./FullStackPage.scss"
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 
@@ -49,6 +51,7 @@ function FullStackPage() {
           </div>
         </article>
       </Link>
+      <Footer/>
     </div>
   );
 }

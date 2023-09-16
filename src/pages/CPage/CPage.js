@@ -1,5 +1,7 @@
 import fireAlarm from "../../assets/images/fire-alarm.png";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+
 import "./CPage.scss";
 function CPage() {
   return (
@@ -23,6 +25,7 @@ function CPage() {
           </div>
         </article>
       </Link>
+      <Footer/>
     </div>
   );
 }

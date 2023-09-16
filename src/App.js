@@ -9,6 +9,8 @@ import JavaScript from "./pages/JavaScriptPage/JavaScriptPage";
 import WebsitePage from "./pages/WebsitePage/WebsitePage";
 import FullStackPage from "./pages/FullStackPage/FullStackPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
           <Route path="/html-css-websites" element={<WebsitePage />} />
           <Route path="/full-stack" element={<FullStackPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact-me" element={<ContactPage />} />
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

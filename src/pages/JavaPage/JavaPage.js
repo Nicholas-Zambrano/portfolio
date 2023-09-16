@@ -2,6 +2,7 @@ import "./JavaPage.scss";
 import { Link } from "react-router-dom";
 import DOD from "../../assets/images/DOD.png";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
+import Footer from "../../components/Footer/Footer";
 
 function JavaPage() {
   return (
@@ -26,6 +27,7 @@ function JavaPage() {
           </div>
         </article>
       </Link>
+      <Footer/>
     </div>
   );
 }
