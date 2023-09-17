@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 
 import "./CPage.scss";
+import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 function CPage() {
   return (
     <div className="CPage">
       <div className="CPage__headerWrapper">
         <h1 className="CPage__title">C</h1>
+        <DropdownMenu/>
       </div>
-      <Link className="projectsPage__link">
+      <Link className="projectsPage__link" to="/arduino-project">
         <article className="projectsPage__project">
           <div className="projectsPage__projectWrapper">
             <div className="projectsPage__projectWritingWrapper">
@@ -21,11 +23,15 @@ function CPage() {
               </p>
               <p className="projectsPage__projectLanguage">Language: C</p>
             </div>
-            <img className="projectsPage__projectImage" src={fireAlarm} alt="fire alarm" />
+            <img
+              className="projectsPage__projectImage"
+              src={fireAlarm}
+              alt="fire alarm"
+            />
           </div>
         </article>
       </Link>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

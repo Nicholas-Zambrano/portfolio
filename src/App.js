@@ -10,6 +10,7 @@ import WebsitePage from "./pages/WebsitePage/WebsitePage";
 import FullStackPage from "./pages/FullStackPage/FullStackPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import ArduinoPage from "./pages/ArduinoPage/ArduinoPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/full-stack" element={<FullStackPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact-me" element={<ContactPage />} />
+          <Route path="/arduino-project" element={<ArduinoPage />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

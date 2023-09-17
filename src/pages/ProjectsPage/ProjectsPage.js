@@ -22,7 +22,7 @@ function ProjectsPage() {
         <h1 className="projectsPage__title">Projects</h1>
         <DropdownMenu />
       </div>
-      <Link className="projectsPage__link">
+      <Link className="projectsPage__link" to="/arduino-project">
         <article className="projectsPage__project">
           <div className="projectsPage__projectWrapper">
             <div className="projectsPage__projectWritingWrapper">

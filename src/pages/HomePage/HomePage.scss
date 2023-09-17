@@ -59,6 +59,10 @@
     border-radius: 1rem;
     width: 6rem;
     margin-right: 1rem;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   &__link {
@@ -114,7 +118,8 @@
   &__intro {
     font-family: monospace;
     width: 100%;
-    background: #61e5d5;
+    // background: #61e5d5;
+    background-color: #61e5d59e;
     border-radius: 1rem;
     font-size: 1.8rem;
     padding: 1rem;
