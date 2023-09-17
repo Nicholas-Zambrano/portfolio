@@ -5,6 +5,11 @@
     text-align: center;
     // padding-top: 2rem;
     color: white;
+
+    @include tablet {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
   }
 
   &__header {

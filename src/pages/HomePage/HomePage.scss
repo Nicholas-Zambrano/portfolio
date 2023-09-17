@@ -9,9 +9,26 @@
   background-size: cover;
   min-height: 100vh;
 
-  &__headerWrapper{
-        border-bottom: 0.5rem solid rgb(180, 42, 190);
+  // &__headerWrapper{
+  //       border-bottom: 0.5rem solid rgb(180, 42, 190);
 
+  // }
+
+  &__headerContainer {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+
+    @include mobile {
+      gap: 2rem;
+      padding-left: 1rem;
+    }
+
+    @include tablet {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
   }
   &__header {
     display: flex;
@@ -38,6 +55,11 @@
     position: relative;
     bottom: 1rem;
     // right: 3rem;
+
+    @include tablet {
+      width: 9rem;
+      height: 9rem;
+    }
   }
 
   &__headerButtonWrapper {
@@ -59,8 +81,10 @@
     border-radius: 1rem;
     width: 6rem;
     margin-right: 1rem;
+    background-color: rgb(241 10 255);
+    color: white;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -100,7 +124,7 @@
 
   &__name {
     font-family: monospace;
-    width: 100%;
+    // width: 100%;
     // background: #61e5d5;
     // background-color: black;
     border-radius: 1rem;
@@ -112,6 +136,7 @@
 
     @include tablet {
       font-size: 4rem;
+      width: 20rem;
     }
   }
 
@@ -124,6 +149,8 @@
     font-size: 1.8rem;
     padding: 1rem;
     color: rgb(94 96 255);
+    color: rgb(12 15 246);
+    text-align: start;
 
     @include tablet {
       font-size: 2rem;

@@ -17,19 +17,26 @@ import c from "../../assets/images/c.png";
 function HomePage() {
   return (
     <section className="homePage">
-      <div className="homePage__headerWrapper">
-        <div className="homePage__header">
-          <img className="homePage__me" src={me} alt="face of me" />
+      <div className="homePage__headerContainer">
+        <div className="homePage__headerWrapper">
+          <div className="homePage__header">
+            <img className="homePage__me" src={me} alt="face of me" />
 
-          <DropdownMenu />
+            {/* <DropdownMenu /> */}
+          </div>
         </div>
-      </div>
-
-      <article className="homePage__context">
         <p className="homePage__name">
           {/* Hello I'm Nicholas Zambrano, welcome to my portfolio. */}
           Nicholas Zambrano
         </p>
+        <DropdownMenu />
+      </div>
+
+      <article className="homePage__context">
+        {/* <p className="homePage__name"> */}
+        {/* Hello I'm Nicholas Zambrano, welcome to my portfolio. */}
+        {/* Nicholas Zambrano
+        </p> */}
 
         <p className="homePage__intro">
           I am passionate expoloring several programming langauges and
@@ -55,7 +62,6 @@ function HomePage() {
                 className="homePage__skillImage homePage__cImage"
                 src={c}
                 alt="C language"
-
               />
             </Link>
           </article>
@@ -136,5 +142,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-
