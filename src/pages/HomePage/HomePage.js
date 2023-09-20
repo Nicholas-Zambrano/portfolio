@@ -40,7 +40,7 @@ function HomePage() {
 
         <p className="homePage__intro">
           I am passionate expoloring several programming langauges and
-          fascinated seing lines of code becoming a tangible product.
+          fascinated seeing lines of code becoming a tangible product.
         </p>
       </article>
       <section className="homePage__skills">
